@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="5dp">
+    <TextView
+        android:text="Menu Item - "
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/coupon_name"
+        android:textSize="16dp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:gravity="center|left"
+        android:textColor="@color/black"/>
+    <TextView
+        android:text="Apply the code upon checkout and enjoy! Offer is valid only for Limited customers"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="13dp"
+        android:layout_below="@id/coupon_name"
+        android:gravity="left|top"
+        android:id="@+id/coupon_desc"
+        android:textColor="#828282"/>
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_margin="8dp"
+            android:background="@drawable/greybrwhite_bg"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/voucher"
+                android:id="@+id/coupon_image" />
+            <TextView
+                android:id="@+id/Addbutton"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:background="@drawable/accent_sqbt"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:text="Apply"
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+        </RelativeLayout>
+</RelativeLayout>

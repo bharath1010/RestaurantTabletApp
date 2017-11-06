@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/headingtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:text="Coupon Code"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/Backbutton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp"
+            android:padding="8dp"
+            android:src="@drawable/close"
+            android:tint="@color/ashaaa"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="8dp"
+       android:layout_marginRight="8dp"
+       android:background="@drawable/greybrwhite_bg">
+       <TextView
+           android:id="@+id/Search_button"
+           android:layout_width="90dp"
+           android:layout_height="36dp"
+           android:text="Search"
+           android:gravity="center"
+           android:textStyle="bold"
+           android:textColor="@color/white"
+           android:background="@drawable/accent_sqoval"
+           android:layout_marginRight="9dp"
+           android:layout_centerVertical="true"
+           android:layout_alignParentRight="true"
+           android:textSize="16dp" />
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/transparent"
+           android:hint="Enter Coupon code"
+           android:textColorHint="@color/ashaaa"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:textSize="18dp"
+           android:layout_marginLeft="8dp"
+           android:layout_marginRight="106dp"/>
+   </RelativeLayout>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/Mainscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimary">
+
+                <TextView
+                    android:id="@+id/headingtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="55dp"
+                    android:gravity="center"
+                    android:paddingTop="4dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+<RelativeLayout
+    android:id="@+id/Morelayout"
+    android:layout_width="60dp"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true">
+                <TextView
+                    android:id="@+id/Moretext"
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:text="More"
+                    android:textColor="@color/white"
+                    android:textSize="9dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/Morebutton"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="4dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/more" />
+</RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="60dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="200dp"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_margin="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/menu_10"/>
+                                <TextView
+                                    android:text="Today's Special"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_centerInParent="true"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="5dp"
+                                    android:minHeight="30dp"
+                                    android:gravity="center|left"
+                                    android:background="#30FFFFFF"
+                                    android:textColor="@color/black"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_margin="2dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/menu_15"/>
+                                <TextView
+                                    android:text="Offers"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="18dp"
+                                    android:maxLines="1"
+                                    android:singleLine="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_alignParentBottom="true"
+                                    android:textStyle="bold"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="5dp"
+                                    android:minHeight="30dp"
+                                    android:gravity="center|left"
+                                    android:background="#30FFFFFF"
+                                    android:textColor="@color/black"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <com.falconnect.buffetbee.Widgets.ExpandableHeightGridView
+                            android:id="@+id/menulistview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:columnWidth="200dp"
+                            android:gravity="center"
+                            android:numColumns="auto_fit"
+                            android:horizontalSpacing="20dp"
+                            android:verticalSpacing="20dp"
+                            android:stretchMode="columnWidth" />
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="-60dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/black">
+
+                        <RelativeLayout
+                            android:id="@+id/Alert_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/Alert_image"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="4dp"
+                                android:src="@drawable/bell"
+                                android:tint="@color/white" />
+
+                            <TextView
+                                android:id="@+id/Alert_text"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:text="Waiter"
+                                android:textColor="@color/white"
+                                android:textSize="14dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/Alert_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="24dp"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerInParent="true"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center|top"
+                                android:paddingTop="2dp"
+                                android:singleLine="true"
+                                android:text="Please wait..."
+                                android:textColor="@color/white"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+
+                            <com.falconnect.buffetbee.Widgets.ProgressIndicator
+                                android:id="@+id/Alert_progress"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_centerInParent="true" />
+
+                            <TextView
+                                android:id="@+id/Alert_timer"
+                                android:layout_width="match_parent"
+                                android:layout_height="20dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_centerInParent="true"
+                                android:gravity="center|bottom"
+                                android:paddingBottom="2dp"
+                                android:text="60 Secs"
+                                android:textColor="#FFFFFF"
+                                android:textSize="10dp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Refill_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView
+                            android:id="@+id/Refill_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/refill"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/Refill_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Re-fill"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Cart_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/black">
+
+                        <ImageView
+                            android:id="@+id/Cart_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/cart" />
+
+                        <TextView
+                            android:id="@+id/Cart_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Cart"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Cart_count"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@id/Cart_image"
+                            android:background="@drawable/accent_round"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Order_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorPrimary">
+
+                        <ImageView
+                            android:id="@+id/Order_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/list" />
+
+                        <TextView
+                            android:id="@+id/Order_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Orders"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/Order_count"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@id/Order_image"
+                            android:background="@drawable/accent_round"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/white"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:id="@+id/Chatimg"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/cash"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Bill"
+                            android:textColor="@color/white"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/Games_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/black">
+
+                        <ImageView
+                            android:id="@+id/Games_image"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/offers"
+                            android:tint="@color/white" />
+
+                        <TextView
+                            android:id="@+id/Games_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerInParent="true"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Offers"
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/Alert_belllayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="40dp"
+            android:visibility="gone"
+            android:background="#80000000">
+
+            <ImageView
+                android:id="@+id/Alert_bell"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:padding="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bell_rang" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

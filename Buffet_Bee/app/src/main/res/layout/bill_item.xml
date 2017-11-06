@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+    <TextView
+        android:text="Menu Item - "
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="200dp"
+        android:id="@+id/menu_name"
+        android:textSize="16dp"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:gravity="center|left"
+        android:textColor="@color/black"/>
+    <TextView
+        android:text="$ 10000"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:gravity="center|left"
+        android:id="@+id/menu_amount"
+        android:textColor="@color/black"/>
+        <TextView
+            android:text="$"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="88dp"
+            android:layout_alignParentRight="true"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center|left"
+            android:id="@+id/menu_nos"
+            android:textColor="@color/black"/>
+        </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+            <ImageView
+                android:id="@+id/Backbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back_arrow"/>
+            <TextView
+                android:id="@+id/headingtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:paddingTop="0dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="58dp"
+                android:text="Order Summary"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:padding="1dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/black_round">
+            <TextView
+                android:id="@+id/Progressbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="In Progress"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@drawable/accent_roundleft"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/Deliveredbutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Delivered"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:background="@color/transparent"
+                android:textSize="14dp" />
+        </LinearLayout>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/Filterbutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/filter"
+                android:tint="@color/white"/>
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:scrollbars="vertical" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimary">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+            <TextView
+                android:id="@+id/menu_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4 Nos"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:minHeight="35dp"
+                android:background="#00000000"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Items"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:background="#00000000"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:layout_weight="1">
+            <TextView
+                android:id="@+id/menu_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:minHeight="35dp"
+                android:background="#00000000"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:textColor="@color/white"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Submit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/Submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Start Billing"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/accent_round"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

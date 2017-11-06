@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp">
+       <RelativeLayout
+           android:id="@+id/Search_layout"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:layout_centerInParent="true"
+           android:layout_marginRight="60dp"
+           android:background="@drawable/white_round">
+           <ImageView
+               android:id="@+id/Search_image"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:layout_marginLeft="5dp"
+               android:padding="7dp"
+               android:layout_centerVertical="true"
+               android:src="@drawable/search"
+               android:background="@drawable/white_round"/>
+           <EditText
+               android:id="@+id/Search_Edit"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:gravity="center|left"
+               android:textStyle="bold"
+               android:hint="Search Branch"
+               android:text=""
+               android:focusableInTouchMode="true"
+               android:cursorVisible="false"
+               android:textColorHint="@color/ashaaa"
+               android:layout_alignParentLeft="true"
+               android:layout_centerInParent="true"
+               android:layout_marginLeft="45dp"
+               android:background="#00000000"
+               android:textColor="@color/white"
+               android:textSize="16dp" />
+       </RelativeLayout>
+
+       <ImageView
+           android:id="@+id/Backbutton"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="8dp"
+           android:layout_marginRight="4dp"
+           android:padding="4dp"
+           android:src="@drawable/close"
+           android:tint="@color/ashaaa"
+           android:layout_centerInParent="true"
+           android:layout_alignParentRight="true" />
+   </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@color/white" >
+    <LinearLayout
+        android:id="@+id/Recentlayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recent Branches"
+        android:gravity="center|left"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/ashaaa"/>
+        <ListView
+            android:id="@+id/listviewrecent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other Branchs"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:paddingLeft="15dp"
+            android:textColor="@color/ashaaa"/>
+    </LinearLayout>
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+</LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

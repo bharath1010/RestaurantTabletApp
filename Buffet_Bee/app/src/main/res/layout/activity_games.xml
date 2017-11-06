@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/Mainscreen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary">
+                <ImageView
+                    android:id="@+id/Backbutton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/back_arrow"/>
+                <TextView
+                    android:id="@+id/headingtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:paddingTop="0dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="58dp"
+                    android:text="Games"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+                        <com.falconnect.buffetbee.Widgets.ExpandableHeightGridView
+                            android:id="@+id/menulistview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnWidth="110dp"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            android:numColumns="auto_fit"
+                            android:stretchMode="columnWidth"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
